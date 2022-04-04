@@ -372,8 +372,8 @@ main {
   gap: 1%;
 }
 .text {
-  width: 70%;
-  height: 70%;
+  width: 85%;
+  height: 85%;
   background-color: rgba(255, 255, 255, 0.089);
   border-radius: 20px;
   padding: 3rem;
@@ -399,7 +399,7 @@ main {
   text-align: center;
 }
 .container main {
-  justify-content: center;
+  justify-content: flex-start;
 }
 h4 {
   font-size: 35px;
