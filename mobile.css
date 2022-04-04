@@ -1,0 +1,46 @@
+.social-mobile a {
+  padding: 0 6%;
+}
+.social-mobile i:active {
+  color: aliceblue;
+}
+.social-mobile i {
+  font-size: 40px;
+}
+@keyframes up {
+  0% {
+    transform: translatey(100%);
+  }
+  80% {
+    transform: translatey(100%);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+.social-mobile {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  width: 100vw;
+  height: 9%;
+  animation: up 5s;
+}
+@media (max-width: 520px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+  }
+
+  .social {
+    display: none;
+  }
+  .social-mobile {
+    display: flex;
+  }
+}

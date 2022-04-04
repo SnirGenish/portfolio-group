@@ -1,0 +1,411 @@
+* {
+  padding: 0px;
+  scroll-behavior: smooth;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+
+  overflow: hidden;
+}
+.hello {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hello h1 {
+  opacity: 0;
+  animation: big 4s;
+  font-size: 60px;
+  color: rgb(245, 242, 255);
+}
+.hello span {
+  font-size: 75px;
+  color: rgb(255, 255, 255);
+}
+@keyframes big {
+  0% {
+    transform: scale(20%);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(400%);
+    opacity: 0;
+  }
+}
+.cont {
+  position: relative;
+}
+.br {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(83, 95, 204);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+}
+@keyframes dd {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.d {
+  animation: dd 8s infinite;
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.06) 20%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 50%;
+  opacity: 0;
+}
+.br::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-filter: blur(2px);
+}
+.d1 {
+  width: 100px;
+  height: 100px;
+}
+.d2 {
+  width: 130px;
+  height: 130px;
+}
+.d3 {
+  width: 170px;
+  height: 170px;
+}
+.d4 {
+  width: 190px;
+  height: 190px;
+}
+.dot1 {
+  animation-delay: 7.8s;
+  left: 2%;
+  top: 9%;
+}
+.dot2 {
+  animation-delay: 2s;
+  left: 40%;
+  top: 36%;
+}
+.dot3 {
+  animation-delay: 7.8s;
+  left: 13%;
+  top: 73%;
+}
+.dot4 {
+  animation-delay: 5.1s;
+  left: 78%;
+  top: 45%;
+}
+.dot5 {
+  animation-delay: 2.3s;
+  left: 11%;
+  top: 78%;
+}
+.dot6 {
+  animation-delay: 13.3s;
+  left: 23%;
+  top: 56%;
+}
+.dot7 {
+  animation-delay: 3.4s;
+  left: 43%;
+  top: 1%;
+}
+.dot8 {
+  animation-delay: 17.1s;
+  left: 98%;
+  top: 54%;
+}
+.dot9 {
+  animation-delay: 19.2s;
+  left: 34%;
+  top: 42%;
+}
+.dot10 {
+  animation-delay: 22.5s;
+  left: 65%;
+  top: 26%;
+}
+.dot11 {
+  animation-delay: 27.8s;
+  left: 63%;
+  top: 48%;
+}
+.dot12 {
+  animation-delay: 32.1s;
+  left: 74%;
+  top: 53%;
+}
+.dot13 {
+  left: 12%;
+  top: 45%;
+}
+.dot14 {
+  left: 50%;
+  top: 90%;
+}
+.dot15 {
+  left: 79%;
+  top: 7%;
+}
+/*  */
+/*  */
+/*  */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social {
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  animation: side 5s;
+  transform: translateY(0);
+}
+.social ul {
+  padding: 0px;
+  transform: translate(-215px, 0);
+  opacity: 0.4;
+  transition: 0.6s;
+}
+.social ul:hover {
+  opacity: 1;
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 270px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+.social ul li:hover {
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgb(104, 114, 199);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  padding: 13px;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  background: #ffffff;
+  transform: rotate(0deg);
+}
+/*  */
+/*  */
+/*  */
+/*  */
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18%;
+}
+header {
+  padding: 3%;
+  position: absolute;
+  top: 0px;
+  animation: head 5s;
+  transform: translateY(0);
+}
+@keyframes head {
+  0% {
+    transform: translateY(-100%);
+  }
+  80% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes side {
+  0% {
+    transform: translatex(-100%);
+  }
+  80% {
+    transform: translatex(-100%);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+@keyframes buttonn {
+  0% {
+    opacity: 0;
+    transform: scale(20%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+
+header h1 {
+  font-size: 50px;
+  color: rgb(245, 242, 255);
+}
+header span {
+  font-size: 65px;
+  color: rgb(255, 255, 255);
+}
+main {
+  display: flex;
+  gap: 100px;
+  height: 100vh;
+  align-items: center;
+}
+
+.button {
+  animation: buttonn 6s, floating 4s infinite;
+  transform: scale(1);
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(248, 249, 255, 0.999) 20%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: 0.4s;
+  cursor: pointer;
+  color: rgb(70, 77, 138);
+}
+.button:hover {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.999) 20%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  color: rgb(100, 106, 165);
+  opacity: 1;
+}
+.goaway {
+  display: none;
+}
+.button h2 {
+  font-size: 40px;
+}
+.button h3 {
+  font-size: 30px;
+}
+.dl {
+  animation-delay: 0.4;
+}
+@keyframes floating {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+#about {
+  justify-content: center;
+  gap: 1%;
+}
+.text {
+  width: 70%;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.089);
+  border-radius: 20px;
+  padding: 3rem;
+  position: relative;
+}
+.text h1 {
+  font-size: 40px;
+}
+.text img {
+  position: absolute;
+  bottom: 0px;
+  height: 40%;
+}
+
+.container h4 {
+  padding: 5%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container main {
+  justify-content: center;
+}
+h4 {
+  font-size: 35px;
+}
+#about h4 {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
