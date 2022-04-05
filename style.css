@@ -309,9 +309,10 @@ main {
   height: 100vh;
   align-items: center;
 }
-
-.button {
+.fi {
   animation: buttonn 6s, floating 4s infinite;
+}
+.button {
   transform: scale(1);
   display: flex;
   width: 200px;
@@ -372,8 +373,8 @@ main {
   gap: 1%;
 }
 .text {
-  width: 85%;
-  height: 85%;
+  width: 70%;
+  height: 70%;
   background-color: rgba(255, 255, 255, 0.089);
   border-radius: 20px;
   padding: 3rem;
@@ -399,7 +400,7 @@ main {
   text-align: center;
 }
 .container main {
-  justify-content: flex-start;
+  justify-content: center;
 }
 h4 {
   font-size: 35px;
